@@ -12,6 +12,7 @@ affect the classification problem
 
 
 3.1. Data Preparation
+
 The first step involved identifying and removing outliers. For each class, the mean and standard deviation of pixel values are computed and
 instances deviating more than 1.5 times the standard deviation from the class mean are flagged as
 outliers. The next step involved augmentation.
@@ -29,6 +30,7 @@ and to ensure that the model does not overfit to
 majority classes.
 
 3.2: Model design
+
 In order to increase the generalization capability and the robustness, the proposed model is an
 EfficientNetV2-B0 pre-trained on ImageNet dataset, which was further fine-tuned through Transfer Learning. An augmentation layer was
 added at the beginning of the architecture to introduce variability in the input data during training.
