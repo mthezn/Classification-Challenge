@@ -1,12 +1,11 @@
 Problem Analysis
+
+
 The dataset is characterized by 13759 RGB images
-with shape 96x96, representing cells. It is a MultiClassification problem with 8 classes: Basophil,
-Eosinophil, Erythroblast, Immature granulocytes,
+with shape 96x96, representing cells. It is a MultiClassification problem with 8 classes: Basophil, Eosinophil, Erythroblast, Immature granulocytes,
 Lymphocyte, Monocyte, Neutrophil, Platelet.
-An initial analysis of the dataset reveals an imbalance in the distribution of the samples across the
-classes, possible cause of a biased model performance. The class-specific statistical analysis of the
-images reveals the presence of outliers for each label. In addition, the Monocyte class has a further
-deviation from the expected distribution.
+An initial analysis of the dataset reveals an imbalance in the distribution of the samples across the classes, possible cause of a biased model performance. The class-specific statistical analysis of the
+images reveals the presence of outliers for each label. In addition, the Monocyte class has a further deviation from the expected distribution.
 Finally, the attention to details in biological applications is an important aspect to consider as certain
 blood cell types may exhibit morphological similarities. The low resolution of the dataset images might
 affect the classification problem 
